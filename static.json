@@ -1,7 +1,8 @@
 {
   "headers": {
     "/*": {
-      "X-Author": "denom"
+      "X-Author": "denom",
+      "Access-Control-Allow-Origin": "*"
     }
   }
 }
