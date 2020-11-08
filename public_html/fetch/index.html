@@ -16,7 +16,9 @@
 				const { value } = input;
 				fetch(value)
 					.then((data) => {
-						input.value = data.text();
+						data.text().then((v) => {
+							input.value = v;
+						});
 					})
 					.catch((e) => console.log(e))
 			});
